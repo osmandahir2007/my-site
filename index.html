@@ -3,188 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SILANCE</title>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  background: black;
-  color: white;
-}
-
-/* Navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: #111;
-}
-
-nav h2 {
-  color: white;
-}
-
-nav a {
-  color: #aaa;
-  margin-left: 15px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: white;
-}
-
-/* Hero */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(black, #111);
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 60px;
-  letter-spacing: 4px;
-}
-
-.hero p {
-  color: #aaa;
-  margin-top: 10px;
-}
-
-.btn {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #444;
-  color: white;
-}
-
-/* Sections */
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #111;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  background: #222;
-}
-
-/* Footer */
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #111;
-  color: #aaa;
-}
-
-/* Animation */
-.fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 1s;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
+<title>الإمبراطورية</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <!-- Navbar -->
 <nav>
-  <h2>SILANCE</h2>
-  <div>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
+  <div class="logo">
+    <img src="images/placeholder.jpg" alt="شعار الإمبراطورية" width="50">
+    <span>الإمبراطورية</span>
+  </div>
+  <div class="menu">
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">تعريف</a>
+    <a href="ranks.html">رتب عليا</a>
+    <a href="kingdoms.html">الممالك</a>
+    <a href="dukes.html">الدوقات</a>
+    <a href="developer.html">المطور</a>
+    <a href="https://example.com">صحيفة الإمبراطورية</a>
   </div>
 </nav>
 
 <!-- Hero -->
-<div class="hero">
-  <h1>🔥 SILANCE</h1>
-  <p>Welcome to my world</p>
-  <button class="btn" onclick="showMsg()">Start</button>
-</div>
-
-<!-- About -->
-<div class="section fade" id="about">
-  <h2>About Me</h2>
-  <p>I build simple and cool websites</p>
-</div>
-
-<!-- Services -->
-<div class="section fade" id="services">
-  <h2>My Skills</h2>
-  <div class="cards">
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-  </div>
-</div>
+<section class="hero">
+  <img src="images/placeholder.jpg" alt="صورة الإمبراطورية">
+  <h1>مرحباً بك في الإمبراطورية</h1>
+  <p>نبذة ترحيبية عن الإمبراطورية هنا</p>
+</section>
 
 <!-- Footer -->
 <footer>
-  © 2026 SILANCE
+  © 2026 الإمبراطورية
 </footer>
-
-<script>
-function showMsg() {
-  alert("😈 Welcome to SILANCE");
-}
-
-// Scroll Animation
-const elements = document.querySelectorAll('.fade');
-
-window.addEventListener('scroll', () => {
-  elements.forEach(el => {
-    const pos = el.getBoundingClientRect().top;
-    const screen = window.innerHeight;
-
-    if(pos < screen - 100) {
-      el.classList.add('show');
-    }
-  });
-});
-</script>
-
 </body>
 </html>
